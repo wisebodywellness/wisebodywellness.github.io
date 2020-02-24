@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', arial, sans-serif;
+    color: rgb(90,90,90);
+}
+a {
+    color: inherit;
+}
+a:visited {
+    color: inherit;
+}
+a:hover {
+    color: inherit;
+}
+
+.content {
+    padding: 10px;
+}
+
+.navbar {
+    list-style-type: none;
+    width: 100%;
+    border-bottom: 2px solid #00E676;
+    box-shadow: 0 0px 8px 0 rgba(0,0,0,0.2);
+    padding: 4px 20px !important;
+    margin: 0;
+    background-color: white !important;
+}
+.navbar-nav li {
+    margin: 0 10px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    position: relative;
+    min-height: 0;
+    font-size: 17px;
+    color: rgb(150,150,150);
+}
+.navbar-nav li:hover {
+    color: grey;
+}
+.navbar-nav li.contact {
+    margin: 0 10px;
+    color: #00C853;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    position: relative;
+    min-height: 0;
+}
+.navbar-nav li.contact:hover {
+    color: #00E676;
+}
+
+.hidden-info {
+    display: none;
+    overflow: hidden;
+}
+.hidden-info:hover {
+    text-decoration: underline;
+}
+
+.gradient {
+    background: linear-gradient(45deg, #00E676, #536DFE);
+    color: white;
+}
+.gradient h1 {
+    text-align: center;
+    width: 100%;
+    font-weight: 300;
+}
+.gradient .row:last-child {
+    margin-top: 20px;
+}
+.gradient .row:last-child h1 {
+    font-weight: bold;
+}
+
+.bio h1 {
+    color: #00C853;
+    font-weight: bold;
+}
+.bio h3 {
+    font-size: 17px;
+    color: grey;
+    font-style: italic;
+    font-weight: 300;
+}
+.bio p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: grey;
+}
+
+.main {
+    margin: 40px auto;
+}
+
+h3.normal {
+    font-size: 25px;
+}
+
+p.desc {
+    padding: 10px 40px;
+}
+
+.section-header {
+    font-weight: bold;
+    margin: 20px auto;
+}
+
+.icons-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+.icons-list div {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    background: linear-gradient(45deg, #00E676, #69F0AE);
+    margin: 10px;
+    border-radius: 100px;
+    padding: 10px 20px;
+    transition: 0.2s ease-in-out;
+    cursor: default;
+}
+.icons-list div:hover {
+    box-shadow: 0 0px 8px 0 rgba(0,0,0,0.2);
+}
+.icons-list div > * {
+    display: inline-block;
+    color: white;
+    margin: 0 5px;
+}
+.icons-list span {
+    font-size: 18px;
+    font-weight: 300;
+}
+.icons-list i {
+    font-size: 25px;
+}
+
+.jumbotron:not(.gradient) {
+    margin: 40px auto;
+}
+
+h3.important {
+    color: #00E676;
+}
+
+.center-list ul {
+    padding: 0;
+    margin: 0 auto;
+    list-style-type: none;
+    text-align: center;
+    max-width: 50%;
+}
+.center-list ul li {
+    margin: 5px auto;
+    color: grey;
+    padding: 10px;
+}
+
+.card {
+    box-shadow: 0 0px 8px 0 rgba(0,0,0,0.2);
+    padding: 10px 25px;
+    margin: 10px 0;
+    text-align: center;
+    color: grey;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #00E676, #82B1FF);
+    color: rgb(240,240,240);
+}
+.card > * {
+    margin: 10px 0;
+}
+.card h1 {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+.card .price {
+    color: white;
+    font-weight: bold;
+}
+.detail {
+    margin: 3px 0;
+    font-style: italic;
+    font-weight: 300;
+    color: grey;
+}
+
+@media only screen and (max-width: 994px) {
+    .break {
+        flex-direction: column;
+        margin: auto;
+    }
+    .break > * {
+        margin: auto;
+        max-width: 100%;
+    }
+    .break .container {
+        text-align: center !important;
+        margin: 10px auto;
+    }
+}
