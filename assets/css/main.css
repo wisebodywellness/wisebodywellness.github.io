@@ -15,6 +15,9 @@ a:visited {
 a:hover {
     color: inherit;
 }
+audio:focus {
+    outline: none;
+}
 
 .content {
     padding: 10px;
@@ -23,11 +26,11 @@ a:hover {
 .navbar {
     list-style-type: none;
     width: 100%;
-    border-bottom: 2px solid #00E676;
-    box-shadow: 0 0px 8px 0 rgba(0,0,0,0.2);
+    border-bottom: 1px solid rgb(230,230,230);
+    background-color: rgba(255,255,255,0.1) !important;
     padding: 4px 20px !important;
     margin: 0;
-    background-color: white !important;
+    z-index: 1;
 }
 .navbar-nav li {
     margin: 0 10px;
@@ -36,14 +39,14 @@ a:hover {
     position: relative;
     min-height: 0;
     font-size: 17px;
-    color: rgb(150,150,150);
+    color: rgb(230,230,230);
 }
 .navbar-nav li:hover {
-    color: grey;
+    color: white;
 }
 .navbar-nav li.contact {
     margin: 0 10px;
-    color: #00C853;
+    color: white;
     cursor: pointer;
     transition: 0.2s ease-in-out;
     position: relative;
@@ -62,18 +65,23 @@ a:hover {
 }
 
 .gradient {
-    background: linear-gradient(45deg, #00E676, #536DFE);
+    position: relative;
+    top: -70px;
+    padding-top: 100px;
+    margin-bottom: -60px;
+    background-color: transparent;
     color: white;
 }
 .gradient h1 {
     text-align: center;
     width: 100%;
     font-weight: 300;
+    font-size: 35px;
 }
-.gradient .row:last-child {
+.gradient h1.bold {
     margin-top: 20px;
 }
-.gradient .row:last-child h1 {
+.gradient h1.bold {
     font-weight: bold;
 }
 
@@ -194,6 +202,67 @@ h3.important {
     color: grey;
 }
 
+.image h3 {
+    margin-top: 60px;
+    font-size: 30px;
+    font-weight: 300;
+}
+.image audio {
+    margin-top: 20px;
+    width: 400px;
+    height: 40px;
+}
+
+.tilt-icon {
+    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=-0.5);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    display: inline-block;
+}
+
+.row.center-list .tilt-icon {
+    color: rgb(130,130,130);
+    margin-right: 10px;
+}
+
+.gradient-bg {
+    position: fixed;
+    background: linear-gradient(45deg, #00E676, #536DFE);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.content {
+    border-radius: 0;
+    background-color: white;
+    margin: 0 !important;
+    box-shadow: 0 0px 8px 0 rgba(0,0,0,0.1);
+}
+
+.last h4 {
+    font-size: 22px;
+    font-weight: 300;
+    margin: 30px auto;
+}
+.last i {
+    margin-right: 10px;
+}
+.last p, .last i {
+    font-weight: bold;
+    color: grey;
+    transition: 0.2s ease-in-out;
+}
+.last p:hover, .last p:hover i {
+    color: #00E676;
+}
+.last {
+    margin-bottom: 60px;
+}
+
 @media only screen and (max-width: 994px) {
     .break {
         flex-direction: column;
@@ -211,6 +280,11 @@ h3.important {
     .img-responsive {
         max-width: 100%;
         height: auto;
+        max-height: 510px;
         margin: auto !important;
+    }
+
+    .gradient h1 {
+        font-size: 25px;
     }
 }
