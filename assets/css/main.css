@@ -211,6 +211,7 @@ h3.important {
     margin-top: 20px;
     width: 400px;
     height: 40px;
+    max-width: 100%;
 }
 
 .tilt-icon {
@@ -261,6 +262,12 @@ h3.important {
 }
 .last {
     margin-bottom: 60px;
+}
+
+#tags li {
+    color: white;
+    font-weight: bold;
+    cursor: default;
 }
 
 @media only screen and (max-width: 994px) {
