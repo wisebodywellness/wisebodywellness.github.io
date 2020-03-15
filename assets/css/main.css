@@ -118,6 +118,21 @@ p.desc {
     margin: 20px auto;
 }
 
+.listen-on {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.listen-on a {
+    color: #536DFE;
+    margin: 0 12px;
+    font-size: 25px;
+    transition: 0.2s ease-in-out;
+}
+.listen-on a:hover {
+    color: #304FFE;
+}
+
 .icons-list {
     width: 100%;
     display: flex;
@@ -282,6 +297,11 @@ h3.important {
     .break .container {
         text-align: center !important;
         margin: 10px auto;
+    }
+
+    .listen-on {
+        justify-content: center;
+        margin-bottom: 50px;
     }
 
     .img-responsive {
